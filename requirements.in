@@ -1,0 +1,4 @@
+# requirements.in
+psycopg2
+python-dotenv
+sqlalchemy
