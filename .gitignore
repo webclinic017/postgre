@@ -2,4 +2,4 @@
 venv/
 .env
 env.example
-.0_download.py
+0_download.py
