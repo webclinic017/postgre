@@ -1,5 +1,6 @@
 .history/
 venv/
+data/*/*
 .env
 env.example
 0_download.py
