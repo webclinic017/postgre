@@ -4,3 +4,5 @@ data/*/*
 .env
 env.example
 0_download.py
+data_csv/
+store_to_csv.py
