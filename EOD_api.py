@@ -61,7 +61,10 @@ class EodData(metaclass=ABCMeta):
             assert self._tickers != set()
         except:
             raise ValueError("Add at least 1 ticker")
-        return self._df.sort_values(["Stock", "Date"]).set_index(["Stock", "Date"])
+        if self._df.empty:
+            return self._df
+        else:
+            return self._df.sort_values(["Stock", "Date"]).set_index(["Stock", "Date"])
 
     def add_tickers(self, added_tickers):
         added_tickers = set(added_tickers) - self._tickers
