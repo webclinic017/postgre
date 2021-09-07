@@ -3,3 +3,4 @@ psycopg2
 python-dotenv
 sqlalchemy
 pandas
+boto3
